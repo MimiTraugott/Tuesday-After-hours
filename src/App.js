@@ -31,13 +31,14 @@ class App extends React.Component {
         <h1>{posts.title}</h1>
         <p>{post.content}</p>
         <img src={post.image} />
-        <link to={`/edit/${post.id}`}>edit</link>
+        <Link to={`/edit/${post.id}`}>edit</Link>
         {/* <button onClick={() => function(post.id)}>delete</button> */}
-      </div>)
+      </div>
+    ))
     return (
       <HashRouter>
         <div className="App">
-          {mapped posts}
+          {mappedPosts}
           <Switch>
             {/* <Route path="/" exact component={AllPosts} />
             <Route path="/add" component={AddPosts} />
